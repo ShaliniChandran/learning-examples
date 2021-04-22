@@ -3,12 +3,12 @@ package com.learning;
 public class AdjacentDuplicates {
 
 	public static void main(String args[]) {
-		String inputString = "abbaca";
+		String inputString = "coder";
 		removeDuplicates(inputString);
 	}
 
-	static void printStack(Stack s) {
-		char[] arr = new char[6];
+	static void printStack(Stack1 s) {
+		char[] arr = new char[5];
 		int i=0;
 		if (s.isEmpty()) {
 			return;
@@ -20,8 +20,8 @@ public class AdjacentDuplicates {
 	private static void removeDuplicates(String inputString) {
 		char prevVal;
 		char currentVal;
-		Stack st = new Stack(6);
-		for (int i = 0; i < 6; i++) {
+		Stack1 st = new Stack1(5);
+		for (int i = 0; i < 5; i++) {
 			currentVal = inputString.charAt(i);
 			if (i == 0 || st.isEmpty())
 				st.push(currentVal);
@@ -35,3 +35,4 @@ public class AdjacentDuplicates {
 		printStack(st);
 	}
 }
+

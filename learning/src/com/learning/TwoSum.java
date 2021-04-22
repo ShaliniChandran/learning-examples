@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Solution {
+public class TwoSum {
 	public int[] twoSum(int[] nums, int target) {
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		int l = nums.length;
@@ -29,7 +29,7 @@ public class Solution {
 
 	public static void main(String args[]) {
 		int n, target;
-		Solution sol = new Solution();
+		TwoSum sol = new TwoSum();
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter the no. of elements in the array :");
 		n = s.nextInt();

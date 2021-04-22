@@ -53,11 +53,11 @@ class Bucket {
 	}
 }
 
-public class HashMap {
+public class HashMapImp {
 	private int key_space;
 	private List<Bucket> hashTable;
 
-	public HashMap() {
+	public HashMapImp() {
 		this.key_space = 2069;
 		this.hashTable = new ArrayList<Bucket>();
 		for (int i = 0; i < key_space; i++) {
@@ -81,7 +81,7 @@ public class HashMap {
 	}
 	
 	public static void main(String args[]) {
-		HashMap hashMap = new HashMap();
+		HashMapImp hashMap = new HashMapImp();
 		hashMap.put(1, 1);
 		hashMap.put(2, 2);
 		System.out.println(hashMap.get(1));

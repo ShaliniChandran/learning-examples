@@ -1,11 +1,11 @@
 package com.learning;
 
-public class Stack {
+public class Stack1 {
 	private int maxSize;
 	private char[] stack;
 	private int top;
 
-	public Stack(int s) {
+	public Stack1(int s) {
 		maxSize = s;
 		stack = new char[maxSize];
 		top = -1;
